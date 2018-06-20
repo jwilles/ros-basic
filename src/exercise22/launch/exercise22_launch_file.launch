@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="exercise22" type="simple_topic_subscriber.py" name="SimpleSubscribe"  output="screen">
+  </node>
+</launch>
