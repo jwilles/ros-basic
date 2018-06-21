@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="unit2_mini_project" type="mini_project.py" name="mini_project_node"  output="screen">
+  </node>
+</launch>
