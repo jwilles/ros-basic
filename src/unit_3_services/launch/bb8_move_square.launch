@@ -1,0 +1,8 @@
+<launch>
+    <node
+        pkg="unit_3_services" 
+        type="move_bb8.py" 
+        name="move_bb8_square" 
+        output="screen" >
+    </node>
+</launch>
