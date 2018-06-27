@@ -1,0 +1,8 @@
+<launch>
+    <node
+        pkg="action_server_move_square"
+        type="move_square_action_server.py"
+        name="move_square_action_server"
+        output="screen">
+    </node>
+</launch>
