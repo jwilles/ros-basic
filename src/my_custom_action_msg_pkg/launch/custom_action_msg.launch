@@ -1,0 +1,8 @@
+<launch>
+    <node
+        pkg="my_custom_action_msg_pkg"
+        type="custom_action_msg.py"
+        name="custom_action_msg"
+        output="screen" >
+    </node>
+</launch>
