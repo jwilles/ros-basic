@@ -28,14 +28,14 @@ class CrashDetectionService(object):
         if not direction_dict['front']:
             return 'forwards'
         else:
-            if not direction_dict['back']:
-                return 'backwards'
+            if not direction_dict['left']:
+                return 'left'
             else:
-                if not direction_dict['left']:
-                    return 'left'
+                if not direction_dict['right']:
+                    return 'right'
                 else:
-                    if not direction_dict['right']:
-                        return 'right'
+                    if not direction_dict['back']:
+                        return 'backwards'
                     else:
                         return 'un_stuck'
                     
