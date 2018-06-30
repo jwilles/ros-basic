@@ -18,8 +18,8 @@ class OdometryAnalysis(object):
             start_odom = odom_result_array[0]
             end_odom = odom_result_array[-1]
             
-            start_position = start_odom.pose.position
-            end_position = end_odom.pose.position
+            start_position = start_odom.pose.pose.position
+            end_position = end_odom.pose.pose.position
             
             distance_vector = self.get_distance_vector(start_position, end_position)
             distance = self.calc_vect_length(distance_vector)
@@ -39,7 +39,7 @@ class OdometryAnalysis(object):
 def check_out_of_maze(goal_distance, odom_result_array):
     odom_analysis = OdometryAnalysis()
     distance = odom_analysis.get_distance_moved(odom_result_array)
-    
+    rospy.loginfo("Distance Moved="+str(distance))
     if distance > goal_distance:
         return True
         
